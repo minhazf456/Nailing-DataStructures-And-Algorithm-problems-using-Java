@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.*;
 public class StringComparison {
     /*********** ALgorithm 1******************
@@ -65,14 +67,19 @@ public class StringComparison {
         for (int i = 0; i < string1.length(); i++) {
             count[string1.charAt(i)]++;
             count[string2.charAt(i)]--;
+
         }
+
         for (int i = 0; i < CHARACTER_RANGE; i++) {
-            if (count[i] != -0) {
+            if (count[i] != 0) {
                 return false;
             }
         }
+
         return true;
+
     }
+
     public static void main (String [] args){
 //        char [] str1 = "geeksforgeeks".toCharArray();
 //        char [] str2 = "forgeeksgeeks".toCharArray();
