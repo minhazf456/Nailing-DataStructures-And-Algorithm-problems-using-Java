@@ -1,4 +1,4 @@
-package HashMaps;
+package mdminhaz.HashMaps.com;
 
 import java.util.HashSet;
 import java.util.Set;

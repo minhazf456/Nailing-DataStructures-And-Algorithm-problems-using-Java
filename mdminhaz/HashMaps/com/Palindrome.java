@@ -1,6 +1,6 @@
 /*Write an efficient function that checks whether any permutation (all permunation of tom is tom, tmo, omt, mto) of an input string is a palindrome.(is a string that is same when read forward and backward)*/
 
-package HashMaps;
+package mdminhaz.HashMaps.com;
 
 import java.util.HashSet;
 import java.util.Set;
