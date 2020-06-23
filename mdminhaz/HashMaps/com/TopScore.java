@@ -5,6 +5,8 @@ but players are complaining that their rankings aren't
  updated fast enough. You need a faster sorting algorithm.*/
 package mdminhaz.HashMaps.com;
 
+import java.util.Arrays;
+
 public class TopScore {
 
     public static int[] sortScores(int[] unorderedScores, int highestPossibleScore) {
@@ -33,10 +35,12 @@ public class TopScore {
 
                 currentSortedIndex++;
 
+
             }
         }
-
+        System.out.println(Arrays.toString(sortedScores));
         return sortedScores;
+
 
     }
 
@@ -44,7 +48,7 @@ public class TopScore {
     public static void main(String[] args) {
         int [] unorderedScores = {30, 30, 20, 20, 10, 10};
         int highestPossibleScores = 100;
-    sortScores(unorderedScores, highestPossibleScores);
+        sortScores(unorderedScores, highestPossibleScores);
 
     }
 }
