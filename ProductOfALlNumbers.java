@@ -39,7 +39,7 @@ public class ProductOfALlNumbers {
         int [] intArray = {1,3,5,2};
         System.out.println("Our input is " + Arrays.toString(intArray));
         getProductsOfAllIntsExceptAtIndex(intArray);
-        System.out.println("SO the outPut before each index is " + Arrays.toString(getProductsOfAllIntsExceptAtIndex(intArray)));
+        System.out.println("SO the product Of all integers except atindex is  " + Arrays.toString(getProductsOfAllIntsExceptAtIndex(intArray)));
 
     }
 }
