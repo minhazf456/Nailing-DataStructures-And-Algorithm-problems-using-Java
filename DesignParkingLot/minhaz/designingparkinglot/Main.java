@@ -1,7 +1,4 @@
-package com.minhaz.designingparkinglot;
-
-import java.util.ArrayList;
-import java.util.HashMap;
+package DesignParkingLot.minhaz.designingparkinglot;
 
 public class Main {
 

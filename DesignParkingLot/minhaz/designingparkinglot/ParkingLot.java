@@ -1,4 +1,4 @@
-package com.minhaz.designingparkinglot;
+package DesignParkingLot.minhaz.designingparkinglot;
 
 import java.util.*;
 

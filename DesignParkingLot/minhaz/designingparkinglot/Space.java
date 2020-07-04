@@ -1,4 +1,4 @@
-package com.minhaz.designingparkinglot;
+package DesignParkingLot.minhaz.designingparkinglot;
 
 public interface Space extends Vehicle {
 

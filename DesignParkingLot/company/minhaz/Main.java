@@ -1,4 +1,4 @@
-package com.company.minhaz;
+package DesignParkingLot.company.minhaz;
 
 public class Main {
 

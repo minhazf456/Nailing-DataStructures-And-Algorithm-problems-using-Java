@@ -1,4 +1,4 @@
-package com.minhaz.designingparkinglot;
+package DesignParkingLot.minhaz.designingparkinglot;
 
 public class ParkingSpace implements Space {
     private VehicleSize vehicleSize;
