@@ -1,9 +1,9 @@
-
+package ArraysAndString;
 /*Given all three arrays, write a method to check that my service is first-come, first-served. All food should come out in the same order customers requested it.*/
 /*Recursive Solutions*/
 
 import java.util.Arrays;
-/*public class CafeOrders {
+/*public class ArraysAndString.CafeOrders {
 
     public static int[] removeFirstOrder(int[] orders) {
         return Arrays.copyOfRange(orders,1, orders.length);

@@ -1,3 +1,4 @@
+package ArraysAndString;
 
 import java.awt.*;
         import java.lang.reflect.Array;

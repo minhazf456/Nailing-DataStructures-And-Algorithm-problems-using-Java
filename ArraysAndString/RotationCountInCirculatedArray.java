@@ -1,4 +1,4 @@
-
+package ArraysAndString;
 
 import java.util.*;
 import java.lang.*;
@@ -62,7 +62,9 @@ import java.io.*;
         // element. Consider the cases like
         // {3, 4, 5, 1, 2}
         if (mid < high && arr[mid+1] < arr[mid])
+//
             return (mid + 1);
+
 
         // Check if mid itself is minimum element
         if (mid > low && arr[mid] < arr[mid - 1])

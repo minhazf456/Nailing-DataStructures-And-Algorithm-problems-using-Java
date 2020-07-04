@@ -1,7 +1,9 @@
+package ArraysAndString;
+
 import java.util.*;
 import java.util.HashMap;
 /*
-class NoOfOccurenceOfCharacters {
+class ArraysAndString.NoOfOccurenceOfCharacters {
     static final int MAX_CHAR = 256;
 
     static void getOccuringChar(String str)

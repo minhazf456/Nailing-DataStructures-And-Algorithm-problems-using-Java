@@ -1,4 +1,4 @@
-//
+package ArraysAndString;//
 //import java.io.*;
 //import java.util.*;
 //import java.text.*;
@@ -10,7 +10,7 @@
 //// strings anagram.
 //import java.util.*;
 //
-//class RemoveCharactersFromAnagram {
+//class ArraysAndString.RemoveCharactersFromAnagram {
 //
 //    // function to calculate minimum numbers
 //    // of characters to be removed to make

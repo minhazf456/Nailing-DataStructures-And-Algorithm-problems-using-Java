@@ -1,3 +1,5 @@
+package ArraysAndString;
+
 import java.util.*;
 
 /*Brute force algorithms*/

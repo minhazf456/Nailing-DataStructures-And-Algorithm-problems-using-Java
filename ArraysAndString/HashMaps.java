@@ -1,3 +1,5 @@
+package ArraysAndString;
+
 import java.util.HashMap;
 
 public class HashMaps {
@@ -29,7 +31,7 @@ public class HashMaps {
 
 
 
-        // Common Use of HashMaps: Which character is the most repeated?
+        // Common Use of ArraysAndString.HashMaps: Which character is the most repeated?
         String s = "phonebook";
         HashMap<Character, Integer> hashMap = new HashMap();
         for (int i = 0; i < s.length(); i++) {

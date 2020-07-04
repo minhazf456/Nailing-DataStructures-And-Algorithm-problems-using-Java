@@ -1,3 +1,5 @@
+package ArraysAndString;
+
 import java.util.Arrays;
 import java.util.jar.JarOutputStream;
 /* Write a method that takes an array of characters and reverses the letters in place. ↴*/
@@ -28,7 +30,7 @@ public class ReverseCharacters {
 
 /*Reverse a string*/
 
-//public class ReverseCharacters {
+//public class ArraysAndString.ReverseCharacters {
 //
 //    public static void main (String [] args){
 //        String str = "minhaz";

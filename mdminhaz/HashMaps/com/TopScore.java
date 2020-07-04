@@ -19,6 +19,8 @@ public class TopScore {
             scoreCounts[score]++;
         }
 
+        System.out.println("Total score count " + Arrays.toString(scoreCounts));
+
         // populate the final sorted array
         int[] sortedScores = new int[unorderedScores.length];
         int currentSortedIndex = 0;
@@ -26,6 +28,7 @@ public class TopScore {
         // for each item in scoreCounts
         for (int score = highestPossibleScore; score >= 0; score--) {
             int count = scoreCounts[score];
+            System.out.println("count "+ count);
 
             // for the number of times the item occurs
             for (int occurrence = 0; occurrence < count; occurrence++) {
@@ -47,7 +50,7 @@ public class TopScore {
 
     public static void main(String[] args) {
         int [] unorderedScores = {30, 30, 20, 20, 10, 10};
-        int highestPossibleScores = 100;
+        int highestPossibleScores = 32;
         sortScores(unorderedScores, highestPossibleScores);
 
     }

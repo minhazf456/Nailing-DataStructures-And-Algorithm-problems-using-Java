@@ -1,9 +1,11 @@
+package ArraysAndString;
+
 import java.util.Arrays;
 
 
 
 /**//*recursive approach*//**/
-//public class fibonacci {
+//public class ArraysAndString.fibonacci {
 //
 //    public static  int fib(int n) {
 //        if (n <= 2) return 1;
@@ -17,10 +19,10 @@ import java.util.Arrays;
 
 
 /*Algorithm 2 Dynamic Programming Algorithm*/
-//public class fibonacci {
+//public class ArraysAndString.fibonacci {
 //
 //    public static  int fib(int n) {
-//        /*declare an array tp store fibonacci numbers*/
+//        /*declare an array tp store ArraysAndString.fibonacci numbers*/
 //        int f[] = new int [n+1]; /*// 1 extra to handle case, n = 0 */
 //        f[1] = f[2] = 1;
 //        for (int i = 3; i <= n; i++)
@@ -47,7 +49,7 @@ This is an iterative algorithm (one that uses loops instead of recursion) so we 
 public class fibonacci {
 
     public static  int fib(int n) {
-        /*declare an array tp store fibonacci numbers*/
+        /*declare an array tp store ArraysAndString.fibonacci numbers*/
         int a = 1; int b = 1;
         for (int i = 3;i<=n ; i ++){
             int c = a + b;
