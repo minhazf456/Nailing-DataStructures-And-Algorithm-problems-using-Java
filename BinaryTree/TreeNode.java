@@ -34,10 +34,18 @@ public class TreeNode {
             }
         }
     }
-//
-    public void traverseInOrder(){
-
+// lets do inorder traversal - we visit left node first then root and
+//    then right child node.
+//    now if left child is not equal to null visit the leftchild
+public void traverseInOrder() {
+    if (leftChild != null) {
+        leftChild.traverseInOrder();
     }
+    System.out.print(data + ", ");
+    if (rightChild != null) {
+        rightChild.traverseInOrder();
+    }
+}
 
 
 //    getters and setters

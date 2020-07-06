@@ -32,5 +32,11 @@ public class Tree {
     }
 }
 
+public void traverseInorder(){
+        if (root != null){
+            root.traverseInOrder();
+        }
+}
+
 
 }
