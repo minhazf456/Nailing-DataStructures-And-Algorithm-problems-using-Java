@@ -119,4 +119,34 @@ public class SinglyLinkedList<T> {
         headNode = headNode.nextNode;
         size--;
     }
+
+    /// Delets data given from the linkedlist
+
+    public void deleteByValue(T data){
+        if (isEmpty()){
+            return;
+        }
+        /// Start from the head node
+
+        Node currentNode = this.headNode;
+        Node prevNode = null;
+
+        if (currentNode.data.equals(data)){
+            deleteAtHead();
+            return;
+        }
+
+        while (currentNode !=null){
+            if (data.equals(currentNode.data)){
+                prevNode.nextNode = currentNode.nextNode;
+                return;
+            }
+            prevNode = currentNode;
+            currentNode = currentNode.nextNode;
+
+
+        }
+    }
 }
+
+// Time Complexity: The algorithm runs in O(1) since we’re deleting the first node of the list.
