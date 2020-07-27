@@ -5,7 +5,9 @@ public class ListDemo {
         SinglyLinkedList<Integer> sll = new SinglyLinkedList<Integer>();
         sll.printList();
         for (int i = 1; i <= 10; i++) {
-            sll.insertAtHead(i);
+//            sll.insertAtHead(i);
+//            sll.printList();
+            sll.insertAtEnd(i);
             sll.printList();
         }
     }

@@ -46,5 +46,27 @@ public class SinglyLinkedList <T>{
         }
         System.out.println(temp.data.toString() + " -> null");
     }
-}
 
+
+    //Inserts new data at the end of the linked list
+    public void insertAtEnd(T data) {
+        //if the list is empty then call insertATHead()
+        if (isEmpty()) {
+            insertAtHead(data);
+            return;
+        }
+        //Creating a new Node with value data
+        Node newNode = new Node();
+        newNode.data = data;
+        newNode.nextNode = null;
+
+        Node last = headNode;
+        //iterate to the last element
+        while (last.nextNode != null) {
+            last = last.nextNode;
+        }
+        //make newNode the next element of the last node
+        last.nextNode = newNode;
+        size++;
+    }
+}
