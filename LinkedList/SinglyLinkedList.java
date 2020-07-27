@@ -69,4 +69,27 @@ public class SinglyLinkedList <T>{
         last.nextNode = newNode;
         size++;
     }
+
+    //inserts data after the given prev data node
+
+    public void insertAfter (T data, T previous){
+        Node newNode = new Node();
+        newNode.data = data;
+        // Start from the head node
+        Node currentNode = this.headNode;
+
+        while (currentNode != null && !currentNode.data.equals(previous)){
+            currentNode = currentNode.nextNode;
+            //if such a node was found
+            //then point our newNode to currentNode's nextElement
+            if (currentNode != null) {
+                newNode.nextNode = currentNode.nextNode;
+                currentNode.nextNode = newNode;
+                size++;
+            }
+        }
+
+    }
+
+
 }
