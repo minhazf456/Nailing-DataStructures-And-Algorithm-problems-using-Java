@@ -120,33 +120,47 @@ public class SinglyLinkedList<T> {
         size--;
     }
 
-    /// Delets data given from the linkedlist
-
-    public void deleteByValue(T data){
-        if (isEmpty()){
+    //Deletes data given from the linked list
+    public void deleteByValue(T data) {
+        //if empty then simply return
+        if (isEmpty())
             return;
-        }
-        /// Start from the head node
 
+        //Start from head node
         Node currentNode = this.headNode;
-        Node prevNode = null;
+        Node prevNode = null; //previous node starts from null
 
-        if (currentNode.data.equals(data)){
+        if(currentNode.data.equals(data)) {
+            //data is at head so delete from head
             deleteAtHead();
             return;
         }
-
-        while (currentNode !=null){
+        //traverse the list searching for the data to delete
+        while (currentNode != null) {
+            //node to delete is found
             if (data.equals(currentNode.data)){
                 prevNode.nextNode = currentNode.nextNode;
                 return;
             }
             prevNode = currentNode;
             currentNode = currentNode.nextNode;
-
-
         }
     }
 }
-
 // Time Complexity: The algorithm runs in O(1) since we’re deleting the first node of the list.
+
+// deleteByValue(): It takes a value as a parameter. Additionally, it searches for a node in the Singly Linked List
+// that has the given data value while keeping track of current and previous nodes.
+// If not found, it means no such value exists in the list. If found, it performs a series of steps to delete this value.
+// However, before jumping to those steps, look at some of the terminologies that we used in the function:
+
+//currentNode – node we are currently standing at
+//prevNode – element that comes before currentNode
+//nextNode – pointer to the next node of currentNode
+//Executing the single line of code,
+//
+//prevNode.nextNode = currentNode.nextNode
+//links the prevNode to the nextNode. The current node’s link will be destroyed from the list, and the garbage collector will take care of the deletion automatically.
+//
+//Time Complexity #
+//In the worst case, you would have to traverse until the end of the list. This means the time complexity will be O(n).
