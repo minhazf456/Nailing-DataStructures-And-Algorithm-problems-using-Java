@@ -72,24 +72,37 @@ public class SinglyLinkedList <T>{
 
     //inserts data after the given prev data node
 
-    public void insertAfter (T data, T previous){
-        Node newNode = new Node();
-        newNode.data = data;
-        // Start from the head node
-        Node currentNode = this.headNode;
+//    public void insertAfter (T data, T previous){
+//        Node newNode = new Node();
+//        newNode.data = data;
+//        // Start from the head node
+//        Node currentNode = this.headNode;
+//
+//        while (currentNode != null && !currentNode.data.equals(previous)){
+//            currentNode = currentNode.nextNode;
+//            //if such a node was found
+//            //then point our newNode to currentNode's nextElement
+//            if (currentNode != null) {
+//                newNode.nextNode = currentNode.nextNode;
+//                currentNode.nextNode = newNode;
+//                size++;
+//            }
+//        }
 
-        while (currentNode != null && !currentNode.data.equals(previous)){
-            currentNode = currentNode.nextNode;
-            //if such a node was found
-            //then point our newNode to currentNode's nextElement
-            if (currentNode != null) {
-                newNode.nextNode = currentNode.nextNode;
-                currentNode.nextNode = newNode;
-                size++;
+        /// Searches a value in the given LinkedList
+
+        //Searches a value in the given list.
+        public boolean searchNode(T data) {
+            //Start from first element
+            Node currentNode = this.headNode;
+
+            //Traverse the list till you reach end
+            while (currentNode != null) {
+                if (currentNode.data.equals(data))
+                    return true; //value found
+
+                currentNode = currentNode.nextNode;
             }
+            return false; //value not found
         }
-
     }
-
-
-}
