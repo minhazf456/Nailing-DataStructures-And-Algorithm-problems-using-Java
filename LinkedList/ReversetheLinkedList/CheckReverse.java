@@ -32,3 +32,6 @@ class CheckReverse {
         list.headNode = previous;
     }
 }
+
+//    Time Complexity #
+//        The algorithm runs in O(n) since the list is traversed once.
