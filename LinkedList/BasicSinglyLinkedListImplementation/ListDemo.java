@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.BasicSinglyLinkedListImplementation;
 
 public class ListDemo {
     public static void main(String args[]) {

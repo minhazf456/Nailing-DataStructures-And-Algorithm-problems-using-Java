@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.BasicSinglyLinkedListImplementation;
 
 public class SinglyLinkedList <T>{
     // node inner class for SLL
